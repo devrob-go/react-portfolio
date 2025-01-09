@@ -36,7 +36,7 @@ To get started with the project locally:
     ```
 2. Navigate to the project directory:
 
-    ``bash
+    ```bash
     cd portfolio-site
     ```
 
@@ -56,8 +56,8 @@ This will start the React development server, and you can view the site at `http
 
 ## Usage
 
-    - View your portfolio and interact with the various sections such as projects, skills, and contact.
-    - Customize content in src to modify your project details, about me, or any other section.
+- View your portfolio and interact with the various sections such as projects, skills, and contact.
+- Customize content in src to modify your project details, about me, or any other section.
 
 ## Contributing
 
