@@ -993,10 +993,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(30 56 81 / var(--tw-text-opacity, 1));
 }
-.text-amber-300 {
-  --tw-text-opacity: 1;
-  color: rgb(252 211 77 / var(--tw-text-opacity, 1));
-}
 .opacity-50 {
   opacity: 0.5;
 }

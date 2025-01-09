@@ -32,7 +32,7 @@ To get started with the project locally:
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/portfolio-site.git
+    git clone https://github.com/devrob-go/react-portfolio.git
     ```
 2. Navigate to the project directory:
 
