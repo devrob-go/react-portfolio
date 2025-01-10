@@ -14,7 +14,7 @@ const AppBanner = () => {
 		>
 			<div className='w-full xl:w-8/12 flex flex-wrap lg:flex-row xl:flex-row items-center justify-center'>
 				<div className="w-full lg:w-1/3 xl:w-1/3 text-center flex justify-center">
-					<img src={profileImage} className="rounded-full border-4 border-gray-200 w-64 h-64" alt="" />
+					<img src={profileImage} className="rounded-full border-4 border-gray-400 dark:border-gray-200 w-64 h-64" alt="" />
 				</div>
 				<div className="w-full lg:w-2/3 xl:w-2/3 pl-4 text-center lg:text-left xl:text-left">
 					<motion.p
