@@ -10,7 +10,7 @@ const Switcher = () => {
                 <input
                     type='checkbox'
                     checked={activeTheme === 'dark'}
-                    onClick={() => setTheme(activeTheme)}
+                    onChange={() => setTheme(activeTheme)}
                     className='sr-only'
                 />
                 {activeTheme === 'dark' ? (

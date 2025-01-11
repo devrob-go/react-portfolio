@@ -21,7 +21,7 @@ const ProjectsGrid = () => {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-			className="lg:py-20 xl:py-20 py-10"
+			className="mt-28 lg:my-20"
 		>
 			<div className="text-center">
 				<p className="font-general-semibold mt-2 text-4xl text-ternary-dark dark:text-gray-300 uppercase">

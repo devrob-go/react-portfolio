@@ -22,11 +22,11 @@ const AppHeader = () => {
 			id="nav"
 			className="sm:container sm:mx-auto top-0 w-full"
 		>
-			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
+			<div className="z-10 transition-all duration-300 ease-in-out absolute sm:relative w-full top-0 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					{/* Small screen hamburger menu */}
-					<div className="sm:hidden">
+					<div className="sm:hidden relative z-50">
 						<button
 							onClick={toggleMenu}
 							type="button"
@@ -50,12 +50,16 @@ const AppHeader = () => {
 
 				{/* Header links small screen */}
 				<div
-					className={
-						showMenu
-							? 'block m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none'
-							: 'hidden'
-					}
+					className={`fixed top-0 left-0 h-full w-80 pl-16 pt-16 bg-primary-dark shadow-lg transform transition-transform duration-300 ease-in-out ${showMenu ? 'translate-x-0' : '-translate-x-full'
+						}`}
 				>
+					<Link
+						to="/"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-gray-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+						aria-label="Home"
+					>
+						Home
+					</Link>
 					<Link
 						to="/experiences"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-gray-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
@@ -65,7 +69,7 @@ const AppHeader = () => {
 					</Link>
 					<Link
 						to="/projects"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-gray-400  sm:mx-4 mb-2 sm:py-2"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-gray-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="Projects"
 					>
 						Projects
@@ -78,7 +82,7 @@ const AppHeader = () => {
 						Contact
 					</Link>
 				</div>
-				<div className="sm:flex sm:justify-between sm:items-center ">
+				<div className="sm:flex sm:justify-between sm:items-center absolute lg:relative xl:relative top-[30px] lg:top-0 right-0">
 					{/* Header links large screen */}
 					<div className="font-general-medium hidden m-0 sm:ml-4 mt-2 sm:mt-1 sm:flex p-5 sm:p-0 justify-right items-right shadow-lg sm:shadow-none">
 						<Link
@@ -110,7 +114,6 @@ const AppHeader = () => {
 							Contact
 						</Link>
 					</div>
-
 					<Switcher></Switcher>
 				</div>
 			</div>

@@ -12,7 +12,7 @@ const AppBanner = () => {
 			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 			className="flex flex-col md:flex-row w-full min-h-screen justify-center items-center -mt-32"
 		>
-			<div className='w-full xl:w-8/12 flex flex-wrap lg:flex-row xl:flex-row items-center justify-center'>
+			<div className='w-full mt-48 lg:mt-0 xl:w-8/12 flex flex-wrap lg:flex-row xl:flex-row items-center justify-center'>
 				<div className="w-full lg:w-1/3 xl:w-1/3 text-center flex justify-center">
 					<img src={profileImage} className="rounded-full border-4 border-gray-400 dark:border-gray-200 w-64 h-64" alt="" />
 				</div>
@@ -49,7 +49,7 @@ const AppBanner = () => {
 							duration: 0.9,
 							delay: 0.2,
 						}}
-						className="font-general-medium mt-1 text-3xl leading-normal text-gray-500 dark:text-gray-400"
+						className="font-general-medium mt-1 tracking-widest text-3xl leading-normal text-gray-500 dark:text-gray-400"
 					>
 						Backend Developer
 					</motion.p>
