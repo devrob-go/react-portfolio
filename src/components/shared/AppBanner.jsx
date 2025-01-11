@@ -37,11 +37,11 @@ const AppBanner = () => {
 							duration: 0.9,
 							delay: 0.1,
 						}}
-						className="font-general-semibold mt-2 tracking-widest text-4xl text-ternary-dark dark:text-gray-300 uppercase"
+						className="font-general-semibold mt-2 text-4xl text-ternary-dark dark:text-gray-300 uppercase"
 					>
-						M. Rahaman Robin
+						M Rahaman Robin
 					</motion.h1>
-					<motion.p
+					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{
@@ -49,10 +49,29 @@ const AppBanner = () => {
 							duration: 0.9,
 							delay: 0.2,
 						}}
-						className="font-general-medium mt-1 tracking-widest text-3xl leading-normal text-gray-500 dark:text-gray-400"
+						className="font-light mt-3 text-3xl tracking-widest leading-normal text-gray-500 dark:text-gray-400"
 					>
-						Backend Developer
-					</motion.p>
+						<motion.div className='flip'>
+							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
+							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
+							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
+							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
+							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
+							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
+							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
+							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
+							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
+							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
+							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
+							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
+							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
+							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
+							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
+							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
+							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
+							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
+						</motion.div>
+					</motion.div>
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
