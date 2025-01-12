@@ -39,7 +39,7 @@ const AppBanner = () => {
 						}}
 						className="font-general-semibold mt-2 text-4xl text-ternary-dark dark:text-gray-300 uppercase"
 					>
-						M Rahaman Robin
+						M. Rahaman Robin
 					</motion.h1>
 					<motion.div
 						initial={{ opacity: 0 }}
