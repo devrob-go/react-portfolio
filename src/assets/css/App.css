@@ -240,8 +240,7 @@ body {
 }
 
 .flip > div > div {
-  color:#fff;
-  padding:4px 12px;
+  padding:4px 0px;
   height:45px;
   margin-bottom:45px;
   display:inline-block;

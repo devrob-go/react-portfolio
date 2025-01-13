@@ -25,7 +25,7 @@ const ProjectsGrid = () => {
 		>
 			<div className="text-center">
 				<p className="font-general-semibold mt-2 text-4xl text-ternary-dark dark:text-gray-300 uppercase">
-					Projects
+					Recent Projects
 				</p>
 			</div>
 

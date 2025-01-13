@@ -2,7 +2,7 @@ import { FiArrowDownCircle } from 'react-icons/fi';
 import { FiArrowRightCircle } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import profileImage from '../../assets/images/profile.jpg';
-import AppFooter from './AppFooter';
+import AppFooter from '../shared/Socials';
 
 const AppBanner = () => {
 	return (
@@ -49,27 +49,27 @@ const AppBanner = () => {
 							duration: 0.9,
 							delay: 0.2,
 						}}
-						className="font-light mt-3 text-3xl tracking-widest leading-normal text-gray-500 dark:text-gray-400"
+						className="font-thin mt-3 text-3xl leading-normal tracking-widest text-gray-500 dark:text-gray-400"
 					>
 						<motion.div className='flip'>
-							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
-							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
-							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
-							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
-							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
-							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
-							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
-							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
-							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
-							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
-							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
-							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
-							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
-							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
-							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
-							<div className='leading-none'><div className='text-white bg-orange-700/60 dark:bg-orange-700/30'>Coffee Lover</div></div>
-							<div className='leading-normal'><div className='text-white bg-emerald-700/60 dark:bg-emerald-700/30'>Thinker</div></div>
-							<div className='leading-normal'><div className='text-white bg-fuchsia-700/60 dark:bg-yellow-700/30'>Programmer</div></div>
+							<div className='leading-none'><div>Coffee Lover</div></div>
+							<div className='leading-normal'><div>Abstract Thinker</div></div>
+							<div className='leading-normal'><div>Programmer</div></div>
+							<div className='leading-none'><div>Coffee Lover</div></div>
+							<div className='leading-normal'><div>Abstract Thinker</div></div>
+							<div className='leading-normal'><div>Programmer</div></div>
+							<div className='leading-none'><div>Coffee Lover</div></div>
+							<div className='leading-normal'><div>Abstract Thinker</div></div>
+							<div className='leading-normal'><div>Programmer</div></div>
+							<div className='leading-none'><div>Coffee Lover</div></div>
+							<div className='leading-normal'><div>Abstract Thinker</div></div>
+							<div className='leading-normal'><div>Programmer</div></div>
+							<div className='leading-none'><div>Coffee Lover</div></div>
+							<div className='leading-normal'><div>Abstract Thinker</div></div>
+							<div className='leading-normal'><div>Programmer</div></div>
+							<div className='leading-none'><div>Coffee Lover</div></div>
+							<div className='leading-normal'><div>Abstract Thinker</div></div>
+							<div className='leading-normal'><div>Programmer</div></div>
 						</motion.div>
 					</motion.div>
 					<motion.div

@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import { FiArrowRightCircle } from 'react-icons/fi';
-import AppFooter from '../shared/AppFooter';
+import AppFooter from '../shared/Socials';
 import ExperiencesContext from '../../context/ExperiencesContext';
 
 
@@ -109,11 +109,13 @@ const Experiences = () => {
 							))}
 
 							<p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span className='font-bold'>Highlighted Projects:</span> {exp.projects}</p>
-							{exp.tech.map((tech) => (
-								<span class="mr-2 mb-2 rounded-full dark:bg-teal-400/10 bg-emerald-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400 dark:text-teal-300 ">
-									{tech}
-								</span>
-							))}
+							<div className='flex flex-wrap'>
+								{exp.tech.map((tech) => (
+									<span class="mr-2 mb-2 rounded-full dark:bg-teal-400/10 bg-emerald-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-400 dark:text-teal-300 ">
+										{tech}
+									</span>
+								))}
+							</div>
 						</div>
 					</div>
 				))}

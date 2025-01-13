@@ -1,4 +1,4 @@
-import AppBanner from '../components/shared/AppBanner';
+import AppBanner from '../components/home/Home';
 
 const Home = () => {
 	return (

@@ -1,10 +1,10 @@
 // Import images
-import Image1 from '../assets/images/openbanking-1.jpg';
-import Image2 from '../assets/images/remittance-1.jpg';
-import Image3 from '../assets/images/fintech-1.webp';
-import Image4 from '../assets/images/fintech-2.jpg';
-import Image5 from '../assets/images/banking-1.png';
-import Image6 from '../assets/images/crypto-1.jpg';
+import Image1 from '../assets/images/openbanking.png';
+import Image2 from '../assets/images/openbanking.png';
+import Image3 from '../assets/images/fintech.png';
+import Image4 from '../assets/images/fintech.png';
+import Image5 from '../assets/images/banking.png';
+import Image6 from '../assets/images/crypto.png';
 // Import icons
 import {
 	FiFacebook,
@@ -16,9 +16,9 @@ import {
 
 export const singleProjectData = {
 	ProjectHeader: {
-		title: 'Project Management UI',
+		title: 'Golang Project',
 		publishDate: 'Jul 26, 2021',
-		tags: 'UI / Frontend',
+		tags: 'Go / Backend',
 	},
 	ProjectImages: [
 		{

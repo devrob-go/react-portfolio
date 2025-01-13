@@ -864,12 +864,6 @@ video {
 .bg-emerald-400\/10 {
   background-color: rgb(52 211 153 / 0.1);
 }
-.bg-emerald-700\/60 {
-  background-color: rgb(4 120 87 / 0.6);
-}
-.bg-fuchsia-700\/60 {
-  background-color: rgb(162 28 175 / 0.6);
-}
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
@@ -881,13 +875,6 @@ video {
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
-}
-.bg-orange-700\/60 {
-  background-color: rgb(194 65 12 / 0.6);
-}
-.bg-primary-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(13 36 56 / var(--tw-bg-opacity, 1));
 }
 .bg-primary-light {
   --tw-bg-opacity: 1;
@@ -1064,6 +1051,9 @@ video {
 .font-semibold {
   font-weight: 600;
 }
+.font-thin {
+  font-weight: 100;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1133,6 +1123,11 @@ video {
 }
 .opacity-50 {
   opacity: 0.5;
+}
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1320,12 +1315,6 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(16 45 68 / var(--tw-border-opacity, 1));
 }
-.dark\:bg-emerald-700\/30:is(.dark *) {
-  background-color: rgb(4 120 87 / 0.3);
-}
-.dark\:bg-orange-700\/30:is(.dark *) {
-  background-color: rgb(194 65 12 / 0.3);
-}
 .dark\:bg-primary-dark:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(13 36 56 / var(--tw-bg-opacity, 1));
@@ -1339,9 +1328,6 @@ video {
 }
 .dark\:bg-ternary-dark\/40:is(.dark *) {
   background-color: rgb(30 56 81 / 0.4);
-}
-.dark\:bg-yellow-700\/30:is(.dark *) {
-  background-color: rgb(161 98 7 / 0.3);
 }
 .dark\:font-medium:is(.dark *) {
   font-weight: 500;
@@ -1411,6 +1397,10 @@ video {
 .dark\:hover\:text-primary-light:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(247 248 252 / var(--tw-text-opacity, 1));
+}
+.dark\:hover\:text-ternary-light:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(246 247 248 / var(--tw-text-opacity, 1));
 }
 .dark\:focus\:bg-slate-800:focus:is(.dark *) {
   --tw-bg-opacity: 1;
