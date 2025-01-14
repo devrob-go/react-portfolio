@@ -1,7 +1,7 @@
 // Import images
 import OpenBanking1 from '../assets/images/openbanking.png';
 import Remittance1 from '../assets/images/remmitance.png';
-import Fintech1 from '../assets/images/fintech.png';
+import Fintech1 from '../assets/images/hackathon.png';
 import Fintech2 from '../assets/images/fintech.png';
 import Banking from '../assets/images/banking.png';
 import Crypto1 from '../assets/images/crypto.png';
