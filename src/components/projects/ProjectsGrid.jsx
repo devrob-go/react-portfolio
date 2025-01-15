@@ -24,17 +24,17 @@ const ProjectsGrid = () => {
 			className="mt-28 lg:my-20"
 		>
 			<div className="text-center">
-				<p className="font-general-semibold mt-2 text-4xl text-ternary-dark dark:text-gray-300 uppercase">
+				<p className="font-general-semibold mt-2 text-3xl sm:text-4xl text-ternary-dark dark:text-gray-300 uppercase">
 					Recent Projects
 				</p>
 			</div>
 
 			<div className="mt-4">
-				<h3 className="font-general-regular text-center tracking-widest text-secondary-dark dark:text-gray-600 text-md mb-20">
+				<h3 className="font-general-regular text-center tracking-widest text-secondary-dark dark:text-gray-600 text-sm sm:text-md mb-10 sm:mb-20">
 					projects I've contributed to over the years
 				</h3>
-				<div className=" flex justify-between border-b border-primary-light dark:border-secondary-dark pb-3 gap-3">
-					<div className="flex justify-between gap-2">
+				<div className="flex flex-wrap sm:justify-between border-b border-primary-light dark:border-secondary-dark pb-3 gap-3">
+					<div className="flex justify-between gap-2 w-full sm:w-auto">
 						<span className="hidden sm:block bg-primary-light dark:bg-ternary-dark p-2.5 shadow-sm rounded-xl cursor-pointer">
 							<FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5"></FiSearch>
 						</span>
@@ -42,16 +42,15 @@ const ProjectsGrid = () => {
 							onChange={(e) => {
 								setSearchProject(e.target.value);
 							}}
-							className="font-general-medium pl-3 pr-1 sm:px-4 py-2 border border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+							className="font-general-medium w-full  pl-3 pr-1 sm:px-4 py-2 border border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 							id="name" name="name" type="search" required="" placeholder="Search Projects" aria-label="Name"
 						/>
 					</div>
-
 					<ProjectsFilter setSelectProject={setSelectProject} />
 				</div>
 			</div>
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-2 sm:mt-6 sm:gap-10">
 				{selectProject
 					? selectProjectsByCategory.map((project) => (
 							<ProjectSingle

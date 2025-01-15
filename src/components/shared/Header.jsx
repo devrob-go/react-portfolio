@@ -60,14 +60,15 @@ const AppHeader = () => {
 
 				{/* Header links small screen */}
 				<div
-					className={`fixed top-0 left-0 h-full w-80 pl-16 pt-16 dark:bg-primary-dark bg-primary-light transform transition-transform duration-300 ease-in-out ${showMenu ? 'translate-x-0 shadow-2xl' : '-translate-x-full'
+					className={`fixed top-0 left-0 h-full w-60 sm:w-80 pl-16 pt-16 dark:bg-slate-900 bg-primary-light transform transition-transform duration-300 ease-in-out ${showMenu ? 'translate-x-0 shadow-2xl' : '-translate-x-full'
 						}`}
 				>
 					{navLinks.map((link) => (
 						<NavLink
 							key={link.path}
 							to={link.path}
-							className={`block text-left text-lg hover:text-secondary-dark dark:hover:text-ternary-light sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark
+							onClick={toggleMenu}
+							className={`block text-left text-lg hover:text-secondary-dark dark:hover:text-ternary-light sm:mx-4 mb-3 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark
 									${location.pathname === link.path ? "text-primary-dark dark:text-ternary-light" : "dark:text-gray-400 text-gray-400"}`}
 							aria-label={link.name}
 						>

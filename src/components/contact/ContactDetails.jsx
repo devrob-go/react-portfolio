@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const ContactDetails = () => {
 	return (
-		<div className="w-full lg:w-7/12 xl:w-6/12">
+		<div className="w-full mt-28 sm:mt-0 lg:w-7/12 xl:w-6/12">
 			<motion.h1
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
@@ -11,7 +11,7 @@ const ContactDetails = () => {
 					duration: 0.9,
 					delay: 0.1,
 				}}
-				className="font-semibold text-4xl text-left sm:text-left text-ternary-dark dark:text-gray-300 uppercase"
+				className="font-semibold text-3xl sm:text-4xl text-left sm:text-left text-ternary-dark dark:text-gray-300 uppercase"
 			>
 				Get in touch..
 			</motion.h1>
