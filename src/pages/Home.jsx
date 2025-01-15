@@ -1,9 +1,9 @@
-import AppBanner from '../components/home/Home';
+import HomePage from '../components/home/Home';
 
 const Home = () => {
 	return (
 		<div className="container mx-auto">
-			<AppBanner></AppBanner>
+			<HomePage></HomePage>
 		</div>
 	);
 };

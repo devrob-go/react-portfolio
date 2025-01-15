@@ -14,6 +14,7 @@ const AppHeader = () => {
 		{ name: "Experiences", path: "/experiences" },
 		{ name: "Projects", path: "/projects" },
 		{ name: "Contact", path: "/contact" },
+		{ name: "Blogs", path: "/blogs" },
 	];
 
 	function toggleMenu() {
@@ -76,7 +77,7 @@ const AppHeader = () => {
 				</div>
 				<div className="sm:flex sm:justify-between sm:items-center absolute lg:relative xl:relative top-[30px] lg:top-0 right-0">
 					{/* Header links large screen */}
-					<div className="font-general-medium hidden m-0 sm:ml-4 mt-2 sm:mt-1 sm:flex p-5 sm:p-0 justify-right items-right shadow-lg sm:shadow-none">
+					<div className="font-normal hidden m-0 sm:ml-4 mt-2 sm:mt-1 sm:flex p-5 sm:p-0 justify-right items-right shadow-lg sm:shadow-none">
 						{navLinks.map((link) => (
 							<NavLink
 							key={link.path}

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import profileImage from '../../assets/images/profile.jpg';
 import AppFooter from '../shared/Socials';
 
-const AppBanner = () => {
+const Home = () => {
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -112,4 +112,4 @@ const AppBanner = () => {
 	);
 };
 
-export default AppBanner;
+export default Home;

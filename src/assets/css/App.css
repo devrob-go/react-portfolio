@@ -260,3 +260,57 @@ body {
   99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
 }
+
+.text-shine {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 12px 48px;
+	background: linear-gradient(to right, #929292 0, #fff 10%, #929292 20%);
+	background-position: 0;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine 8s infinite linear;
+	animation-fill-mode: forwards;
+	-webkit-text-size-adjust: none;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+@-moz-keyframes shine {
+	0% {
+		background-position: 0;
+	}
+	60%, 100% {
+		background-position: 280px;
+	}
+}
+
+@-webkit-keyframes shine {
+	0% {
+		background-position: 0;
+	}
+	60%, 100% {
+		background-position: 280px;
+	}
+}
+
+@-o-keyframes shine {
+	0% {
+		background-position: 0;
+	}
+	60%, 100% {
+		background-position: 280px;
+	}
+}
+
+@keyframes shine {
+	0% {
+		background-position: 0;
+	}
+	60%, 100% {
+		background-position: 280px;
+	}
+}
