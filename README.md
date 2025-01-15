@@ -37,7 +37,7 @@ To get started with the project locally:
 2. Navigate to the project directory:
 
     ```bash
-    cd portfolio-site
+    cd react-portfolio
     ```
 
 3. Install dependencies:
