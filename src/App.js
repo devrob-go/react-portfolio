@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import AppHeader from './components/shared/Header';
 import './assets/css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
+import CursorEffect from './hooks/cursorMovingEffect.jsx';
 
 const Experiences = lazy(() => import('./pages/Experiences'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
@@ -17,7 +18,8 @@ const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
 function App() {
 	return (
 		<AnimatePresence>
-			<div className="bg-secondary-light dark:bg-primary-dark transition duration-300 min-h-screen">
+			<div className="bg-secondary-light dark:bg-slate-900 transition duration-300 min-h-screen">
+				<CursorEffect />
 				<Router>
 					<ScrollToTop />
 					<AppHeader />

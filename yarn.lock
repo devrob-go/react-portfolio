@@ -1620,6 +1620,11 @@
     schema-utils "^4.2.0"
     source-map "^0.7.3"
 
+"@raidipesh78/re-motion@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.npmjs.org/@raidipesh78/re-motion/-/re-motion-4.2.1.tgz"
+  integrity sha512-Qa3SygSvSnUSynk44HnrZu1qd7jj137wbbcYcQPqJwYlfv9mLZIuFiXoYeXkRyBVqAH7qKeloZ8hwOAKEhg+tA==
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.npmjs.org/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz"
@@ -8196,7 +8201,14 @@ react-scripts@^5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@*, react@^18.0.0, react@^18.1.0, "react@>= 16", "react@>= 16.3.0", "react@>= 16.8.0", react@>=16.8, "react@>=16.8 || ^17.0.0":
+react-ui-animate@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/react-ui-animate/-/react-ui-animate-4.2.0.tgz"
+  integrity sha512-dbbxIAqLwcbG8zRhiXFWjspwYNYfaopJx0P//Bvcus3ZixF+G9vs5kKYQnzhNXtDXTEGLqarVz8YjL2Rru9Xog==
+  dependencies:
+    "@raidipesh78/re-motion" "^4.2.1"
+
+react@*, react@^18.0.0, react@^18.1.0, "react@>= 16", "react@>= 16.3.0", "react@>= 16.8.0", react@>=16.8, "react@>=16.8 || ^17.0.0", "react@>=16.8.0  || >=17.0.0 || >=18.0.0":
   version "18.1.0"
   resolved "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   integrity sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ==
@@ -9577,9 +9589,9 @@ typedarray-to-buffer@^3.1.5:
     is-typedarray "^1.0.0"
 
 "typescript@^3.2.1 || ^4", "typescript@>= 2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
-  version "5.7.3"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-5.7.3.tgz"
-  integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
+  version "4.9.5"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
+  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 unbox-primitive@^1.1.0:
   version "1.1.0"
