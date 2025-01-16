@@ -235,30 +235,53 @@ body {
 }
 
 .flip {
-  height:38px;
-  overflow:hidden;
+	height: 38px;
+	overflow: hidden;
 }
 
-.flip > div > div {
-  padding:4px 0px;
-  height:45px;
-  margin-bottom:45px;
-  display:inline-block;
+.flip>div>div {
+	padding: 4px 0px;
+	height: 45px;
+	margin-bottom: 45px;
+	display: inline-block;
 }
 
 .flip div:first-child {
-  animation: show 16s linear infinite;
+	animation: show 16s linear infinite;
 }
 
 @keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
+	0% {
+		margin-top: -270px;
+	}
+
+	5% {
+		margin-top: -180px;
+	}
+
+	33% {
+		margin-top: -180px;
+	}
+
+	38% {
+		margin-top: -90px;
+	}
+
+	66% {
+		margin-top: -90px;
+	}
+
+	71% {
+		margin-top: 0px;
+	}
+
+	99.99% {
+		margin-top: 0px;
+	}
+
+	100% {
+		margin-top: -270px;
+	}
 }
 
 .text-shine {
@@ -283,7 +306,9 @@ body {
 	0% {
 		background-position: 0;
 	}
-	60%, 100% {
+
+	60%,
+	100% {
 		background-position: 280px;
 	}
 }
@@ -292,7 +317,9 @@ body {
 	0% {
 		background-position: 0;
 	}
-	60%, 100% {
+
+	60%,
+	100% {
 		background-position: 280px;
 	}
 }
@@ -301,7 +328,9 @@ body {
 	0% {
 		background-position: 0;
 	}
-	60%, 100% {
+
+	60%,
+	100% {
 		background-position: 280px;
 	}
 }
@@ -310,7 +339,9 @@ body {
 	0% {
 		background-position: 0;
 	}
-	60%, 100% {
+
+	60%,
+	100% {
 		background-position: 280px;
 	}
 }
@@ -394,4 +425,54 @@ body {
 	bottom: 11px;
 	width: 33px;
 	left: -2px;
+}
+
+.mobile-body-content-hidden {
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	-o-opacity: 0;
+	opacity: 0;
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	-khtml-transform: scale(0.85);
+	-o-transform: scale(0.85);
+	transform: scale(0.85);
+	visibility: hidden;
+}
+
+.mobile-body-content-visible li {
+	margin-left: 0px;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-khtml-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+}
+
+.mobile-body-content-hidden li+li {
+	margin-top: 10px;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-khtml-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+}
+
+.mobile-body-content-hidden li+li+li {
+	margin-top: 20px;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-khtml-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+}
+
+.mobile-body-content-hidden li+li+li+li {
+	margin-top: 30px;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-khtml-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
 }

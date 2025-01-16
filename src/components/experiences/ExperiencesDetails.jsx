@@ -26,7 +26,7 @@ const Experiences = () => {
 					}}
 					className="font-general-semibold mt-2 text-xl lg:text-2xl xl:text-3xl text-left sm:text-left text-ternary-dark dark:text-gray-300 uppercase"
 				>
-					M Rahaman Robin
+					M. Rahaman Robin
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
