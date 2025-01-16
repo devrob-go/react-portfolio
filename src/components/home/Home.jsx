@@ -16,7 +16,7 @@ const Home = () => {
 				<div className="w-full lg:w-1/3 xl:w-1/3 text-center flex justify-center">
 					<img src={profileImage} className="rounded-full border-4 border-gray-400 dark:border-gray-200 w-56 h-56 sm:w-64 sm:h-64" alt="" />
 				</div>
-				<div className="w-full lg:w-2/3 xl:w-2/3 pl-4 text-center lg:text-left xl:text-left">
+				<div className="w-full lg:w-2/3 xl:w-2/3 lg:pl-4 text-center lg:text-left xl:text-left">
 					<motion.p
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
