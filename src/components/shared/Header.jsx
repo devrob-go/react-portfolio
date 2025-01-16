@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import Switcher from '../reusable/Switcher';
 import { NavLink, useLocation } from "react-router-dom";
@@ -29,38 +28,20 @@ const AppHeader = () => {
 		<motion.nav
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
-			id="nav"
+			id="nav-top"
 			className="sm:container sm:mx-auto top-0 w-full"
 		>
 			<div className="z-10 transition-all duration-300 ease-in-out absolute sm:relative w-full top-0 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
 				{/* Header menu links and small screen hamburger menu */}
-				<div className="flex justify-between items-center px-4 sm:px-0">
-					{/* Small screen hamburger menu */}
-					<div className="sm:hidden relative z-50">
-						<button
-							onClick={toggleMenu}
-							type="button"
-							className="focus:outline-none"
-							aria-label="Hamburger Menu"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								className="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
-							>
-								{showMenu ? (
-									<FiX className="text-3xl" />
-								) : (
-									<FiMenu className="text-3xl" />
-								)}
-							</svg>
-						</button>
+				<div className={`overflow-hidden ${showMenu ? "navigation" : ""}`}>
+					<div id="burgerBtn" className='sm:hidden' onClick={toggleMenu}>
+						<div className="line"></div>
 					</div>
 				</div>
 
 				{/* Header links small screen */}
 				<div
-					className={`fixed top-0 left-0 h-full w-60 sm:w-80 pl-16 pt-16 dark:bg-slate-900 bg-primary-light transform transition-transform duration-300 ease-in-out ${showMenu ? 'translate-x-0 shadow-2xl' : '-translate-x-full'
+					className={`fixed top-0 left-0 h-full w-60 sm:w-80 pl-16 pt-28 dark:bg-slate-900 bg-primary-light transform transition-transform duration-300 ease-in-out ${showMenu ? 'translate-x-0 shadow-2xl' : '-translate-x-full'
 						}`}
 				>
 					{navLinks.map((link) => (
@@ -68,7 +49,7 @@ const AppHeader = () => {
 							key={link.path}
 							to={link.path}
 							onClick={toggleMenu}
-							className={`block text-left text-lg hover:text-secondary-dark dark:hover:text-ternary-light sm:mx-4 mb-3 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark
+							className={`block text-left text-2xl font-extralight hover:text-secondary-dark dark:hover:text-ternary-light sm:mx-4 mb-3 sm:py-2 pt-3 sm:pt-2
 									${location.pathname === link.path ? "text-primary-dark dark:text-ternary-light" : "dark:text-gray-400 text-gray-400"}`}
 							aria-label={link.name}
 						>

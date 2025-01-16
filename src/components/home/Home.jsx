@@ -89,7 +89,7 @@ const Home = () => {
 							aria-label="Download Resume"
 						>
 							<FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
-							<span className="text-xs sm:text-md tracking-widest duration-100 leading-normal">
+							<span className="text-xs sm:text-sm font-extralight tracking-widest duration-100 leading-normal">
 								Download Resume
 							</span>
 						</a>
@@ -98,7 +98,7 @@ const Home = () => {
 							className="font-general-medium flex justify-left items-left mt-3 sm:mt-6 mb-6 sm:mb-0 text-lg ml-8 text-gray-500 dark:hover:text-gray-400 hover:text-gray-900"
 						>
 							<FiArrowRightCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowRightCircle>
-							<span className="text-xs sm:text-md tracking-widest duration-100 leading-normal">
+							<span className="text-xs sm:text-sm font-extralight tracking-widest duration-100 leading-normal">
 								Contact Me
 							</span>
 						</a>

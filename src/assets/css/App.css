@@ -321,3 +321,77 @@ body {
 	border-radius: 50%;
 	position: absolute;
 }
+
+#burgerBtn {
+	border-top: 2px solid #ccc;
+	height: 25px;
+	width: 30px;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 30;
+	left: 20px;
+	top: 30px;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-khtml-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+#burgerBtn:before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 30px;
+	left: 0;
+	background: #ccc;
+	top: 10px;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-khtml-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+#burgerBtn:after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 30px;
+	left: 0;
+	background: #ccc;
+	bottom: 0;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-khtml-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.navigation #burgerBtn {
+	border-color: transparent;
+}
+
+.navigation #burgerBtn:before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-khtml-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 33px;
+	left: -2px;
+}
+
+.navigation #burgerBtn:after {
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-khtml-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+	bottom: 11px;
+	width: 33px;
+	left: -2px;
+}
